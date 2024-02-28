@@ -1,6 +1,8 @@
 # Morse-Code-Translator
 This project is an project idea using an Arduino Uno and using the Arduino IDE which is in C++. 
 
+In the circuit, all the buttons have 2 wires connected to them. 1 wire must be connected to the ground pin (called GND on the arduino uno), and a pin number. For the buzzer, the same thing applies, but a resistor is placed to essentially lower the volume of the buzzer by resisting some of the current going into it. The higher resistance of the resistor, the lower the volume of the buzzer will be. In my case, im using a 1K Ohm resistor.
+
 The code begins with including the necessary libraries and declaring variables for pins connected to the buzzer and buttons. The integer is just the pin number the wires are connected to on the arduino. The button variable refers to the button closest to the buzzer. The button2 variable refers to the right-most button. The button3 variable refers to the left-most button.
 
 In the setup() function, it initializes serial communication, sets pin modes for the buzzer and buttons, and sets the timeout for serial communication.
